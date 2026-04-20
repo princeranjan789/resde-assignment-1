@@ -39,7 +39,7 @@ export default function PatientDetail() {
     if (id) {
       fetchPatient();
     }
-  }, [id]);
+  }, [id, apiBase]);
 
   if (loading) {
     return (

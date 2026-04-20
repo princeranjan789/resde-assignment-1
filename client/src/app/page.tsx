@@ -32,7 +32,7 @@ export default function Dashboard() {
     };
 
     fetchPatients();
-  }, []);
+  }, [apiBase]);
 
   if (loading) {
     return (

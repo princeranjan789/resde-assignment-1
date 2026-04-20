@@ -95,7 +95,7 @@ clinical-dashboard/
    npm run dev
    ```
 
-4. Open [http://localhost:3001](http://localhost:3001) in your browser
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
 ## API Endpoints
 
@@ -147,11 +147,13 @@ cd ../server && npm test
 
 ## Deployment
 
-See [CLOUD_DEPLOYMENT.md](CLOUD_DEPLOYMENT.md) for detailed deployment instructions.
+See [CLOUD_DEPLOYMENT.md](CLOUD_DEPLOYMENT.md) for detailed Google Cloud Run deployment instructions.
 
 ## CI/CD
 
-See [CI_CD.md](CI_CD.md) for CI/CD pipeline configuration.
+This repo includes a GitHub Actions workflow at `.github/workflows/ci.yml` that builds the frontend and backend, validates the artifacts, and deploys both services to Cloud Run.
+
+See [CI_CD.md](CI_CD.md) for pipeline details and required secrets.
 
 ## Agent Log
 
